@@ -28,7 +28,7 @@ header{
 }
 
 nav{
-    padding: 1%
+    padding: 1%;
 }
 
 /*Classe genérica para Display Flex*/
@@ -45,7 +45,7 @@ nav{
 
 /*Gap entre os botões do cabeçalho*/
 .gapCabecalhoBotoes{
-    gap: 5%;
+    gap: 15%;
 }
 
 /*Borda do campo de Busca*/
@@ -98,7 +98,7 @@ nav{
 /*Versão Tablet*/
 @media screen and (max-width: 1024px){
     .displayFlex{
-        flex-wrap;
+        flex-wrap: wrap;
     }
 
     .marginResponsiva{
