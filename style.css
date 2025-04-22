@@ -119,3 +119,51 @@ nav{
 /*Versão Mobile*/
 
 /*Fim Cabeçalho*/
+
+/*Início Informações*/
+.containerInformacoes{
+    margin: 5% 17%;
+    
+}
+h1{
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1%;
+
+
+}
+.containerTextoInformacoes{
+    display: flex;
+
+}
+.textoInformacoes{
+    max-width: 80%;
+    margin-top: 5%;
+
+}
+.containerTextoInformacoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    align-items: flex-end;
+    flex-wrap:nowrap;
+}
+
+.subtituloInformacoes{
+    font-size: 4rem;
+}
+
+.imgInformacoes{
+    height: 254px;
+
+}
+
+.containerInformacoes{
+
+}
+
+/*Table*/
+
+
+/*Fim Informações*/
