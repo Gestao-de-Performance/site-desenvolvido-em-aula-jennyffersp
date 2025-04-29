@@ -9,8 +9,10 @@
     --cor-branco-fonte: #FFFFFF;
 
     --cor-background-cursos: #3B1270;
-    
     --cor-background-botao: #8E35FF;
+    --cor-background-rodape: #DED0F1
+    
+    --cor-background-categoria: #CC7F0B;
 }
 
 *{
@@ -28,12 +30,12 @@ h1, h2, p{
 }
 
 .marginSite{
-    margin:7% 17%;
+    margin: 5% 20%;
 }
 
 @media screen and (max-width: 1024px){
     .marginSite {
-        margin: 5% 14%;
+        margin: 5%;
     }
 }
 
@@ -47,13 +49,13 @@ header{
 }
 
 nav{
-    padding: 1%;
+    margin-top: 25px !important;
 }
 
 /*Classe genérica para Display Flex*/
 .displayFlex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -164,7 +166,7 @@ h1{
 }
 
 .subtituloInformacoes{
-    font-size:6.5em;
+    font-size:5.8em;
 }
 
 .imgInformacoes{
@@ -177,18 +179,32 @@ h1{
         flex-wrap: wrap;
     }
 
-    .subtituloInformacoes{
-        font-size: 4rem;
+    .subtituloInformacoes {
+        font-size: 5rem;
     }
 
     .imgInformacoes{
         display: none;
     }
 
-    .textoInformacoes{
+    .textoInformacoes {
         max-width: 80%;
         margin-top: 5%;
     }
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .subtituloInformacoes {
+        font-size: 2.5rem;
+    }
+
+    .textoInformacoes {
+        max-width: 100%;
+    }   
 }
 
 /*Fim Informações*/
@@ -254,23 +270,188 @@ h1{
 .marginTextoSkill{
     margin: 2% 0;
 }
+
+@media screen and (max-width: 1024px){
+    .posicaoPersonagem{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerEscolhaCursos {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+    .quebraDeLinha {
+        white-space: break-spaces;
+    }
+        
+    .containerBotoesEscolhaCursos {
+        gap: 5%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .botoesEscolhaCursos{
+        width: 34px;
+        height: 34px;
+    }
+
+    .botoesEscolhaCursos > img{
+        width: 34px;
+        height: 34px;
+    }   
+}    
 /*Fim Cursos*/
 
 /*Início Botão Inscrever-se*/
 .posicionamentoBotaoInscrever{
     position: relative;
-    margin: 0 17%;
-    top: -175px;
+    margin: 0 20%;
+    top: -140px;
 }
 
 .botaoInscreverSe{
-    width: 100%;
-    display: block;
-    background-color: var(--cor-background-botao);
-    text-align: center;
-    padding: 2%;
-    font-size: 2rem;
+        width: 100%;
+        display: block;
+        background-color: var(--cor-background-botao);
+        text-align: center;
+        padding: 2%;
+        font-size: 2rem;
+        box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
+    }
+
+@media screen and (max-width: 1024px){
+    .posicionamentoBotaoInscrever{
+        margin: 0 5%;
+        top: -38px;
+    }
+
+    .botaoInscreverSe{
+        width: 96%;
+    }   
+}
+
+@media screen and (max-width: 767px){
+    .posicionamentoBotaoInscrever{
+        top: -19px;
+    }
 }
 /*Fim Botão Inscrever-se*/
 
+/*Início Cursos Gratuitos*/
+.tituloCursosGratuitos{
+    margin-bottom: 3%;
+    margin-top: -5%;
+    font-size: 2rem;
+}
 
+.botaoCursosGratuitos{
+    transition: 0.3s;
+}
+
+.botaoCursosGratuitos:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px){
+    .botaoCursosGratuitos {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 767px){
+        .botaoCursosGratuitos {
+            width: 100%;
+ 
+        }
+}
+/*Fim Cursos Gratuitos*/
+    
+/*Início Blog*/
+.tituloBlog{
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.tituloBlog strong{
+    color: var(--cor-background-botao);
+}
+
+.tituloPostBlog{
+    padding: 5% 4% 10%;
+}
+
+.botaoBlog{
+    max-width: 340px;
+    min-height: 370px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.containerPostBlog{
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoriaPostBlog{
+    color: var(--cor-texto-categoria);
+    font-style: italic;
+    font-weight: 600;
+}
+    
+.leituraPostBlog{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px){
+    .gapBlogMobile{
+        gap: 10px;
+    }
+}    
+
+@media screen and (max-width: 767px){
+    .botaoBlog{
+        max-width: 325px;
+    }
+
+    .botaoBlog > img{
+        max-width: 100%;
+    }
+}
+/*Fim Blog*/
+
+/*Início Rodapé*/
+footer{
+    background-color: var(--cor-background-rodape);
+    padding: 0.5%
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
+}
+
+.containerRedesSociais{
+    min-width: 177px;
+}
+
+.logoRodape{
+    width: 100%;
+}
+
+.marginRodape{
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 767px){
+    footer > div {
+        gap: 10%;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: center;
+    }  
+}
+/*Fim Rodapé*/
