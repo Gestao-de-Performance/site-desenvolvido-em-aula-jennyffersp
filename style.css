@@ -166,7 +166,7 @@ h1{
 }
 
 .subtituloInformacoes{
-    font-size:5.8em;
+    font-size: 5.8rem;
 }
 
 .imgInformacoes{
@@ -227,7 +227,7 @@ h1{
     margin: 4% 2%;
 }
 
-.subtituloEscolhaCursos{
+.subtituloEscolhaCurso{
     font-size: 1.5rem;
     font-weight: 500;
     
@@ -334,7 +334,7 @@ h1{
 }
 
 @media screen and (max-width: 767px){
-    .posicionamentoBotaoInscrever{
+    .posicionamentoBotaoInscrever {
         top: -19px;
     }
 }
@@ -360,10 +360,10 @@ h1{
         width: 49%;
     }
 }
+
 @media screen and (max-width: 767px){
         .botaoCursosGratuitos {
             width: 100%;
- 
         }
 }
 /*Fim Cursos Gratuitos*/
@@ -429,7 +429,7 @@ footer{
 
 footer > div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 4%;
 }
