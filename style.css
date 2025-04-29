@@ -12,7 +12,7 @@
     --cor-background-botao: #8E35FF;
     --cor-background-rodape: #DED0F1
     
-    --cor-background-categoria: #CC7F0B;
+    --cor-texto-categoria: #cc7f0b;
 }
 
 *{
@@ -129,7 +129,7 @@ nav{
     .tamanhoBotaoCabecalho{
         width: 70px;
         height: auto;
-        text-align: center;
+        text-align: center;;
     }
 
     .marginBotaoCabecalho{
@@ -158,7 +158,7 @@ h1{
     max-width: 237px;
 }
 
-.containerTextoInformacoes {
+.containerTextoInformacoes{
     display: flex;
     justify-content: space-between;
     gap: 4%;
@@ -170,7 +170,7 @@ h1{
 }
 
 .imgInformacoes{
-    height: 254px;
+    height: 254px
 }
 
 /*Table*/
@@ -264,7 +264,7 @@ h1{
 }
 
 .marginSkillsCurso{
-    margin: 10% 0%;
+    margin: 10% 0;
 }
 
 .marginTextoSkill{
@@ -356,7 +356,7 @@ h1{
 }
 
 @media screen and (max-width: 1024px){
-    .botaoCursosGratuitos {
+    .botaoCursosGratuitos{
         width: 49%;
     }
 }
@@ -411,7 +411,7 @@ h1{
 }    
 
 @media screen and (max-width: 767px){
-    .botaoBlog{
+    .botaoBlog {
         max-width: 325px;
     }
 
@@ -424,7 +424,7 @@ h1{
 /*Início Rodapé*/
 footer{
     background-color: var(--cor-background-rodape);
-    padding: 0.5%
+    padding: 0.5%;
 }
 
 footer > div{
